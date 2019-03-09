@@ -1,7 +1,6 @@
 import React, { Component } from "react"
-import { Section, Title, SectionButton } from "../../utils"
+import { Section, Title } from "../../utils"
 import styled from "styled-components"
-import { Link } from "gatsby"
 import { styles } from "../../utils"
 
 export default class QuickInfo extends Component {
@@ -16,9 +15,6 @@ export default class QuickInfo extends Component {
             ever since the 1500s, when an unknown printer took a galley of type
             and scrambled it to make a type specimen book.
           </p>
-          <Link to="/about/" style={{ textDecoration: "none" }}>
-            <SectionButton style={{ margin: "2rem auto" }}>about</SectionButton>
-          </Link>
         </QuickInfoWrapper>
       </Section>
     )
