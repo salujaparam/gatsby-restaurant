@@ -14,9 +14,11 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <HomeHeader img={img}>
-      <Banner title="eatery" subtitle="14 church st, ashok nagar, bengaluru">
-        <BannerButton style={{ margin: "2rem auto" }}>Menu</BannerButton>
-      </Banner>
+      <Link to="/menu/" style={{ textDecoration: "none" }}>
+        <Banner title="eatery" subtitle="14 church st, ashok nagar, bengaluru">
+          <BannerButton style={{ margin: "2rem auto" }}>Menu</BannerButton>
+        </Banner>
+      </Link>
     </HomeHeader>
     <QuickInfo />
     <Link to="/about/" style={{ textDecoration: "none" }}>
